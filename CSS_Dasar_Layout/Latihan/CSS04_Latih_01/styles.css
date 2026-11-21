@@ -1,0 +1,260 @@
+body{
+    padding:0px;
+    margin:0px auto;
+
+}
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    /* position:fixed; */
+    /* background-color: aqua; */
+    justify-content: space-between;
+    width:100%;
+    margin-bottom:0px;
+}
+
+.logo{
+    display:flex;
+    /* background-color: aqua; */
+    width:45px;
+}
+.logo img{
+    width:40px;
+}
+.logo span{
+    color: blue;
+}
+.menu{
+}
+.menu ul{
+    display:flex;
+    margin:15px 0px;
+    margin-top:20px;
+}
+.menu ul li{
+    list-style-type: none;
+    padding:0px 15px;
+    font-size:12px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+a:hover{
+    color:blue;
+}
+
+.login p{
+    margin-right:60px;
+}
+
+
+
+/*hero section*/
+.hero-section img{
+    width:100%;
+    padding-top:10px;
+}
+
+
+
+
+/* unggul section */
+.unggul{
+    text-align: center;
+}
+.unggul h2{
+    margin-bottom:4px;
+}
+.unggul p{
+    font-size: 16px;
+    margin-top:0px;
+}
+
+
+.describe{
+    width:85%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.describe img{
+    width:25%;
+}
+.describe h3{
+    font-size:13px;
+}
+.describe p{
+    font-size:10px;
+}
+
+.artikel-1, .artikel-2, .artikel-3{
+    /* background-color: aqua; */
+    width:30%;
+    /* height:0px; */
+    text-align:center;
+    border:2px rgba(0,0,0,0.2);
+    border-style: solid;
+    border-radius:20px; 
+}
+
+.artikel-1 img{
+    margin-bottom:0px;
+    padding-top:6px;
+}
+.artikel-1 h3{
+    margin-top:7px;
+}
+.artikel-2 img{
+    padding-top:13px;
+}
+.artikel-2 h3{
+    margin-top:6px;
+}
+.artikel-3 img{
+    padding-top:5px;
+    margin-bottom:0px;
+}
+.artikel-3 h3{
+    margin-top:8px;
+}
+
+.arti img{
+    color:rgb(192, 192, 223);
+}
+
+.gambar{
+    background-color:rgba(7, 81, 184, 0.6);
+    padding:4px;
+    width:20%;
+    margin:0  auto;
+    margin-top:5px;
+    border-radius:5px;
+}
+.gambar img{
+    width:80%;
+}
+
+.gambar-2{
+    width:25%;
+    /* padding-top:30px; */
+    margin-top:12px;
+}
+.gambar-2 img{
+    padding-top:10%;
+    width:100%;   
+}
+
+
+
+/* Footer */
+.footer{
+    display: flex;
+    background-color:#efefef;
+    padding:40px;
+    margin-top:20px;
+    justify-content: space-between;
+}
+
+.desc-edu{
+    /* background-color: aquamarine; */
+    width:150px;
+}
+.desc-edu p{
+    padding-top:0px;
+    margin-top:3px;
+    font-size:10px;
+}
+.edu img{
+    width:45px;
+    padding-right:10px;
+}
+.edu{
+    display:flex;
+    /* padding-bottom:0px; */
+    width:200px;
+}
+.edu span{
+    color: blue;
+}
+
+
+.menu{
+    /* padding-left:20%; */
+}
+.menuku ul{
+    display: block;
+    padding-left:0px;
+    text-align: left;
+}
+
+
+
+
+.menuku ul li{
+    text-align: left;
+    padding-left:0px;
+    list-style: none;
+}
+
+.bantuan{
+    /* padding-left:20%; */
+}
+.bantuan ul{
+    display: block;
+    padding-left:0px;
+    text-align: left;
+}
+.bantuan ul li{
+    text-align: left;
+    padding-left:0px;
+    list-style:none;
+}
+
+
+.lonya{
+    display:block;
+    /* padding-left:20%; */
+    /* background-color: aqua; */
+    width:100px;
+    /* padding-left:0px; */
+}
+.lonya ul{
+    display: flex;
+    padding-left:0px;
+}
+.lonya p{
+    
+}
+.lonya ul li{
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+.lonya img{
+    width:20px;
+    /* padding-left:10px; */
+}
+.gam img{
+    padding-left: 5px;
+}
+
+.padd{
+    padding-left:5%;
+    align-items: center;
+}
+
+
+
+.gambar img{
+    align-items:center;
+}
+
+
+
+

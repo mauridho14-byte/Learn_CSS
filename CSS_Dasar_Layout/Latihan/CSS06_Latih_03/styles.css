@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+/* NAV */
+    /* Side Bar */
+.side-bar{
+    position:fixed;
+    background-color:rgb(12, 12, 92);
+    width:140px;
+    height:665px;
+}
+.side-bar>.edu{
+    display:flex;
+}
+.edu img{
+    width:25px;
+}
+.edu span{
+    color:blue;
+}
+
+.menu li{
+    list-style: none;
+    display:flex;
+}
+.menu ul{
+    padding-left:0;
+}
+.menu img{
+    width:20px;
+    height:20px;
+    color:white;
+}
+.menu p{
+    padding:0;
+    margin:0;
+    color:white;
+}
+.menu li{
+    margin-bottom:15px;
+}
+
+.menu-pintasan>p{
+    font-size:11px;
+    margin-top:25px;
+}
+    /* Top-Bar */
+.top-bar{
+    background-color: aqua;
+}

@@ -1,0 +1,54 @@
+body{
+    max-width: 960px;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h1{
+    text-align: center;
+}
+
+
+.nav{
+    background-color:#efefef;
+    margin:10px;
+    padding:10px;
+}
+.nav ul{
+    text-align: center;
+}
+.nav li{
+    display: inline;
+    padding:5px;
+    list-style:none;
+    padding-right:2px;
+}
+
+.highlight{
+    background-color:#efefef;
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+.highlight img{
+    width:20%;
+}
+
+.artickel{
+    float: left;
+    background-color:#efefef;
+    width:280px;
+    margin:10px;
+    padding:10px;
+}
+
+.footer{
+    background-color:#efefef;
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+
+.content{
+    overflow: auto;
+}
