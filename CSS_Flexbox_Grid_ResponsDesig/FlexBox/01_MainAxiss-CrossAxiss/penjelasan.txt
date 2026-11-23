@@ -1,0 +1,31 @@
+Ada 4 nilai utama
+1.row
+    Horizontal dari kiri ke kanan
+2.row-reverse
+    Horizontal dari kanan ke kiri
+3.column
+    Vertikal dari atas ke bawah
+4.column-reverse
+    Vertikal dari bawah ke atas
+
+
+1.row
+    -Arah Main Axis(justify-content)
+        Horizontal: Kiri -> Kanan
+    -Arah Crodd Axis(align-items)
+        Vertikal: Atas -> Bawah
+2.row-reverse    
+    -Arah Main Axis(justify-content)
+        Horizontal: Kanan -> Kiri
+    -Arah Crodd Axis(align-items)
+        Vertikal: Atas -> Bawah
+3.column
+    -Arah Main Axis(justify-content)
+        Horizontal: Atas -> Bawah
+    -Arah Crodd Axis(align-items)
+        Vertikal: Kiri -> Kanan
+4.column-reverse
+    -Arah Main Axis(justify-content)
+        Horizontal: Bawah -> Atas
+    -Arah Crodd Axis(align-items)
+        Vertikal: Kiri -> Kanan

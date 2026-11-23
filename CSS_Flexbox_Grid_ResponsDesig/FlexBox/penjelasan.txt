@@ -1,0 +1,4 @@
+Apa itu Flexbox?
+Flexbox (Flexible Box Layout) adalah sebuah metode layout CSS yang 
+digunakan untuk mengatur posisi, susunan, dan jarak antar elemen di 
+dalam sebuah container.

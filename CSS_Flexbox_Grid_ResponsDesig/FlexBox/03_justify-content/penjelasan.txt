@@ -1,0 +1,27 @@
+Properti ini sangat penting dalam Flexbox karena sering 
+digunakan untuk mengatur posisi elemen, misalnya membuat 
+menu navbar berada di tengah atau membuat dua elemen berada 
+di sisi kiri dan kanan.
+
+1. Apa itu justify-content?
+    justify-content adalah properti CSS Flexbox yang digunakan untuk 
+    mengatur posisi dan distribusi jarak antar Flex Items berdasarkan 
+    Main Axis (sumbu utama).
+    ingat materi sebelumnya:
+        -jika flex-direction:  row,     Main Axis bergerak Horizontal
+        -jika flex-direction:  column,  Main Axis bergerak Vertikal
+    Jadi, arah kerja justify-content mengikuti nilai flex-direction.
+
+2. Nilai-nilai justify-content
+    1.flex-start
+        item berkumpul di awal Main Axis
+    2.flex-end
+        item berkumpul di akhir Main Axis
+    3.center
+        item berkumpul di tengah
+    4.space-between
+        jarak dibagi di antara item
+    5.space-around
+        Setiap item mendapat ruang di sekelilingya
+    6.space-evenly
+        Semua jarak dibuat sama rata

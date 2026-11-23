@@ -1,0 +1,22 @@
+1. Apa itu align-items?
+    align-items adalah properti CSS Flexbox yang digunakan 
+    untuk mengatur posisi Flex Items berdasarkan Cross Axis 
+    (sumbu silang).
+
+    Ingat kembali:
+    - justify-content → mengatur posisi berdasarkan Main Axis.
+    - align-items     → mengatur posisi berdasarkan Cross Axis.
+
+2.Nilai-nilai align-item
+    1.stretch
+        Meregangkan item untuk mengisi ruang Cross Axis
+    2.baseline
+        Menyelaaskan item berdasarkan garis dasar teks
+    3.flex-start
+        iem berada di awal Cross Axis
+    4.flex-end
+        item berada di akhir Cross Axis
+    5.center
+        item berada di tengah Cross Axis
+
+
