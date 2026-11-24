@@ -1,0 +1,26 @@
+1. Apa itu align-self?
+    align-self adalah properti CSS Flexbox yang digunakan 
+    untuk mengatur posisi satu Flex Item secara individual 
+    berdasarkan Cross Axis.
+
+    Perbedaannya dengan align-items:
+    - align-items  → mengatur posisi seluruh Flex Items dalam container.
+    - align-self   → mengatur posisi satu Flex Item tertentu.
+
+    Misalnya kamu mempunyai tiga kotak. Kamu ingin kotak pertama berada di 
+    atas, kotak kedua di tengah, dan kotak ketiga di bawah.
+    Dengan align-self, kamu bisa melakukannya tanpa memengaruhi posisi kotak lainnya.
+
+2.Nilai-nilai align-self
+    1.auto
+        Mengikuti nilai align-items dari parent (default)
+    2.stretch
+        Meregangakan item pada Cross Axis
+    3.baseline
+        Menyelaraskan item berdasarkan baseline teks
+    3.flex-start
+        Menempatkan item di awal Cross Axis
+    4.flex-end
+        Menempatkan item di akhir Cross Axis
+    5.center
+        Menempatkan item di tengah Cross Axis

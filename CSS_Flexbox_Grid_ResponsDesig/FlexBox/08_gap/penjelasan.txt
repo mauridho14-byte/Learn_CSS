@@ -1,0 +1,15 @@
+1. Apa itu gap?
+    gap adalah properti CSS yang digunakan untuk memberikan 
+    jarak antara item-item di dalam Flexbox.
+
+    Misalnya, kamu memiliki 4 kotak yang saling berdekatan. 
+    Kamu ingin memberikan jarak 20px di antara setiap kotak.
+    Kamu bisa menggunakan gap.
+
+2.Jenis-jenis gap
+    1.gap
+        Mengatur jarak baris dan kolom sekaligus
+    2.column-gap
+        Mengatur jarak pada arah kolom
+    3.row-gap
+        Mengatur jarak pada arah baris

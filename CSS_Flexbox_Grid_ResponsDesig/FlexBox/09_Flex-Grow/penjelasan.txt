@@ -1,0 +1,29 @@
+1. Apa itu flex-grow?
+    flex-grow adalah properti CSS yang digunakan untuk 
+    mengatur seberapa besar sebuah item dapat berkembang 
+    (bertambah ukuran) untuk mengisi ruang kosong yang 
+    tersedia di dalam Flex Container.
+    Sederhananya, ketika masih ada ruang kosong di dalam container, 
+    flex-grow menentukan bagaimana ruang tersebut dibagikan kepada item.
+
+2.Contoh
+    Diketahui:
+    - Lebar container = 600px.
+    - Lebar awal masing-masing item = 100px.
+    - Total lebar awal = 300px.
+    - Ruang kosong = 300px.
+    - Total nilai grow = 1 + 2 + 1 = 4.
+    Pembagiannya:
+    Item	Perhitungan	Tambahan
+    Item 1	1/4 × 300	75px
+    Item 2	2/4 × 300	150px
+    Item 3	1/4 × 300	75px
+
+    Jadi ukuran akhirnya:
+    Item	Ukuran awal	Ukuran akhir
+    Item 1	100px	175px
+    Item 2	100px	250px
+    Item 3	100px	175px
+
+    Perhatikan bahwa item kedua menjadi lebih besar karena nilai 
+    flex-grow-nya adalah 2.

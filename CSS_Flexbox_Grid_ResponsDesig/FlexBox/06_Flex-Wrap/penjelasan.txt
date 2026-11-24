@@ -1,0 +1,16 @@
+1. Apa itu flex-wrap?
+    flex-wrap adalah properti CSS yang digunakan untuk mengatur apakah 
+    elemen di dalam Flex Container tetap berada dalam satu baris atau 
+    boleh berpindah ke baris berikutnya ketika ruangnya tidak cukup.
+
+    Bayangkan kamu memiliki 6 kotak, tetapi lebar container hanya 
+    cukup untuk menampung 3 kotak. Nah, flex-wrap menentukan apa 
+    yang akan terjadi pada kotak lainnya.
+2.Nilai-nilai flex-wrap
+    1.nowrap
+        semua item tetap dalam satu baris.ini nilai default
+    2.wrap
+        item akan berpindah ke baris berikutnya jika ruang tidak cukup
+    3.wrap-reverse
+        item boleh berpindah baris,tetapi susunan barisnya dibalik pada 
+        Cross Axis

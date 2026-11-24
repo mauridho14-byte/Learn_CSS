@@ -1,0 +1,82 @@
+Kalau sebelumnya kita belajar flex-grow untuk memperbesar 
+item, sekarang kita belajar kebalikannya, yaitu memperkecil 
+item ketika ruang di dalam container tidak mencukupi.
+
+1. Apa itu flex-shrink?
+    flex-shrink adalah properti CSS yang digunakan untuk mengatur 
+    seberapa besar sebuah item dapat mengecil ketika ukuran total 
+    item melebihi ruang yang tersedia di dalam Flex Container.
+
+    Sederhananya, ketika beberapa kotak terlalu besar untuk dimasukkan
+    ke dalam container, flex-shrink menentukan bagaimana kotak-kotak 
+    tersebut mengecil.
+
+2.Memahami nilai flex-shrink 
+    A.flex-shrink: 1
+        Nilai default dari flex-shrink
+        .item {
+            flex-shrink: 1;
+        }
+        Artinya item boleh mengecil ketika ruang tidak mencukupi.
+    B.flex-shrink: 0
+        Artinya item tidak boleh mengecil
+        .item {
+            flex-shrink: 0;
+        }
+        Jika total ukuran item lebih besar daripada container, 
+        item bisa keluar dari batas container (overflow).
+    C.flex-shrink: 2
+        Artinya item memiliki faktor penyusutan dua kali dibandingkan
+        item dengan flex-shrink: 1, dengan memperhitungkan ukuran dasar
+        masing-masing item.
+        .item1 {
+            flex-shrink: 1;
+        }
+        .item2 {
+            flex-shrink: 2;
+        }
+        .item3 {
+            flex-shrink: 1;
+        }
+        Item kedua akan mendapatkan porsi penyusutan lebih besar.
+
+3. Memahami perhitungan flex-shrink
+    Bagian ini penting agar kamu memahami bagaimana browser membagikan penyusutan.
+    Misalnya:
+    - Lebar container = 400px.
+    - Item A = 200px.
+    - Item B = 200px.
+    - Item C = 200px.
+    - Total ukuran awal = 600px.
+    Berarti terdapat kekurangan ruang sebesar 200px.
+
+    Jika semuanya memiliki flex-shrink: 1, hasilnya:
+    Item  Ukuran awal  Pengurangan	Ukuran akhir
+    A	  200px	       66,67px	    133,33px
+    B	  200px	       66,67px	    133,33px
+    C	  200px	       66,67px	    133,33px
+
+    Jadi, ketiganya mengecil secara proporsional.
+
+    Catatan: Secara teknis, perhitungan flex-shrink memperhitungkan ukuran 
+             dasar item (flex-basis) yang dikalikan faktor shrink. Untuk 
+             contoh ini, ukuran dasarnya sama sehingga pembagiannya sama rata.
+
+4.Perbedaan flex-grow dan flex-shrink
+    Keduanya memiliki fungsi yang berlawanan.
+    flex-grow	               flex-shrink
+    Memperbesar item	       Memperkecil item
+    Ketika ada ruang kosong	   Ketika ruang tidak mencukupi
+    Default 0	               Default 1
+    Membagikan ruang tambahan  Membagikan pengurangan ukuran
+
+    Cara mudah mengingatnya:
+    - grow = tumbuh.
+    - shrink = menyusut.
+
+
+***CATAT****
+Default flex-shrink: 1 berlaku ketika sebuah elemen menjadi Flex Item, 
+yaitu ketika parent-nya menggunakan display: flex atau 
+display: inline-flex.
+Jadi, bukan berarti semua elemen HTML dari awal memiliki flex-shrink: 1.

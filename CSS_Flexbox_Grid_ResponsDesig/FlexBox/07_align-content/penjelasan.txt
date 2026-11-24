@@ -1,0 +1,38 @@
+1. Apa itu align-content?
+    align-content adalah properti CSS Flexbox yang digunakan untuk
+    mengatur posisi sekumpulan baris (flex lines) pada sumbu silang
+    (cross axis).
+    Sederhananya, properti ini mengatur jarak dan posisi antarbaris 
+    ketika item Flexbox membungkus ke baris berikutnya (flex-wrap: wrap).
+
+2.Nilai-nilai align-content
+    1.flex-start
+        Barisan item dikumpulkan di bagian awal cross axis
+    2.flex-end
+        Barisan item dikumpulkan di bagian akhir cross axis
+    3.center
+        Barisan item dikumpulkan di tengah container
+    4.space-between
+        Baris pertama berada di awal,baris terakhir berada di akhir,
+        dan ruang kosong dibagikan di antara baris
+    5.space-around
+        Setiap baris mendapatkan ruang kosong di sekelilingnya
+    6.space-evenly
+        jarak kosong di antara baris dan kedua ujung container
+        dibuat sama
+    7.stretch
+        Baris akan diperbesar untuk mengisi ruang kosong yang 
+        tersedia
+
+3. Perbedaan align-items dan align-content
+    Ini bagian yang penting karena keduanya sering membingungkan.
+    Properti	        Fungsi
+    align-items	        Mengatur posisi item dalam satu baris
+    align-content	    Mengatur posisi sekumpulan baris
+
+    Gambaran sederhananya:
+    - align-items: mengatur posisi kotak-kotak dalam baris.
+    - align-content: mengatur posisi baris-baris kotak.
+    Catatan: align-content juga bisa digunakan pada Flexbox satu 
+             baris dalam kondisi tertentu, tetapi untuk pembelajaran 
+             awal, fokuslah pada pengaturan beberapa baris.
