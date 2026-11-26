@@ -1,0 +1,105 @@
+1.flex-direction
+    1.row
+        Horizontal dari kiri ke kanan
+    2.row-reverse
+        Horizontal dari kanan ke kiri
+    3.column
+        Vertikal dari atas ke bawah
+    4.column-reverse
+        Vertikal dari bawah ke atas   
+2.justify-content
+    1.flex-start
+        item berkumpul di awal Main Axis
+    2.flex-end
+        item berkumpul di akhir Main Axis
+    3.center
+        item berkumpul di tengah
+    4.space-between
+        jarak dibagi di antara item
+    5.space-around
+        Setiap item mendapat ruang di sekelilingya
+    6.space-evenly
+        Semua jarak dibuat sama rata
+3.Align-item
+    1.stretch
+        Meregangkan item untuk mengisi ruang Cross Axis
+    2.baseline
+        Menyelaaskan item berdasarkan garis dasar teks
+    3.flex-start
+        iem berada di awal Cross Axis
+    4.flex-end
+        item berada di akhir Cross Axis
+    5.center
+        item berada di tengah Cross Axis
+4.align-self
+    1.auto
+        Mengikuti nilai align-items dari parent (default)
+    2.stretch
+        Meregangakan item pada Cross Axis
+    3.baseline
+        Menyelaraskan item berdasarkan baseline teks
+    3.flex-start
+        Menempatkan item di awal Cross Axis
+    4.flex-end
+        Menempatkan item di akhir Cross Axis
+    5.center
+        Menempatkan item di tengah Cross Axis
+
+
+5.flex-wrap
+    1.nowrap
+        semua item tetap dalam satu baris.ini nilai default
+    2.wrap
+        item akan berpindah ke baris berikutnya jika ruang tidak cukup
+    3.wrap-reverse
+        item boleh berpindah baris,tetapi susunan barisnya dibalik pada 
+        Cross Axis
+6.align-content
+    1.flex-start
+        Barisan item dikumpulkan di bagian awal cross axis
+    2.flex-end
+        Barisan item dikumpulkan di bagian akhir cross axis
+    3.center
+        Barisan item dikumpulkan di tengah container
+    4.space-between
+        Baris pertama berada di awal,baris terakhir berada di akhir,
+        dan ruang kosong dibagikan di antara baris
+    5.space-around
+        Setiap baris mendapatkan ruang kosong di sekelilingnya
+    6.space-evenly
+        jarak kosong di antara baris dan kedua ujung container
+        dibuat sama
+    7.stretch
+        Baris akan diperbesar untuk mengisi ruang kosong yang 
+        tersedia
+7.gap
+    gap:40px;
+
+
+8.flex-grow
+    flex-grow: 1;
+9.flex-shrink
+    flex-shrink: 0;
+10.Apa saja nilai flex-basis
+    1.auto
+        Menggunakan ukuran utama dari width atau height jika tersedia, 
+        atau ukuran konten sebagai dasarnya
+    2.0
+        Memulai perhitungan dari ukuran basis nol
+    3.200px
+        Ukuran sebesar 200 pixel
+    4.50%
+        Ukuran awal sebesar 50% dari ukuran dalam container pada sumbu utama
+11.flex-shorthand
+    Penulisan	      Artinya
+    flex: 1	          Umumnya setara dengan 1 1 0%
+    flex: auto	      Setara dengan 1 1 auto
+    flex: none	      Setara dengan 0 0 auto
+    flex: initial	  Setara dengan 0 1 auto
+    flex: 1 1 200px	  Grow 1, shrink 1, basis 200px
+    flex: 0 0 200px	  Tidak membesar atau mengecil, basis 200px
+
+12.order
+    1.order: 0;
+    2.order: 1;
+    3.order: -1; 

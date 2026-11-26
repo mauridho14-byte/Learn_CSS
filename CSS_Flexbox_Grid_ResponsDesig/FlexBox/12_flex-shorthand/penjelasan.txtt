@@ -1,0 +1,39 @@
+Oke, sekarang kita masuk ke materi flex shorthand. 
+Ini merupakan materi yang menggabungkan tiga properti 
+Flexbox yang sudah kita pelajari sebelumnya, yaitu:
+1. flex-grow
+2. flex-shrink
+3. flex-basis
+Tujuannya supaya kita bisa mengatur ketiganya menggunakan satu properti saja.
+
+1. Apa itu flex shorthand?
+    flex adalah properti singkat (shorthand) untuk menuliskan
+    flex-grow, flex-shrink, dan flex-basis sekaligus.
+    dan flex-basis sekaligus.
+    Misalnya, sebelumnya kita menulis seperti ini:
+        .item{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 200px;
+        }
+    Dengan flex shorthand, kita cukup menulis:
+        .item{
+            flex: 1 1 200px
+        }
+
+    Jadi, pola penulisannya:
+        flex: grow shrink basis;
+
+4. Bentuk penulisan flex yang sering digunakan
+Ada beberapa bentuk penulisan yang perlu kamu kenali.
+    Penulisan	      Artinya
+    flex: 1	          Umumnya setara dengan 1 1 0%
+    flex: auto	      Setara dengan 1 1 auto
+    flex: none	      Setara dengan 0 0 auto
+    flex: initial	  Setara dengan 0 1 auto
+    flex: 1 1 200px	  Grow 1, shrink 1, basis 200px
+    flex: 0 0 200px	  Tidak membesar atau mengecil, basis 200px
+
+    Catatan: flex: 1 umumnya menggunakan basis 0% menurut aturan shorthand 
+                   CSS. Browser dapat memiliki detail perilaku tertentu saat ukuran container 
+                   tidak ditentukan.

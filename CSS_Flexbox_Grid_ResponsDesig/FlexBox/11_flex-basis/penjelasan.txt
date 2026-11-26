@@ -1,0 +1,33 @@
+Ini merupakan salah satu properti penting 
+dalam Flexbox karena berhubungan dengan 
+ukuran awal elemen sebelum flex-grow dan 
+flex-shrink bekerja.
+
+1. Apa itu flex-basis?
+    flex-basis adalah properti CSS yang digunakan 
+    untuk menentukan ukuran awal sebuah flex item 
+    pada sumbu utama (main axis).
+
+    Sederhananya, flex-basis menentukan seberapa besar ukuran 
+    awal elemen sebelum browser membagikan ruang kosong atau
+    mengecilkan elemen.
+
+    contoh:
+        .container{
+            display:flex;
+        }
+        .item{
+            flex-basis:200px
+        }
+    Artinya, setiap .item memiliki ukuran awal sebesar 200px pada sumbu utama.
+
+2.Apa saja nilai flex-basis
+    A.auto
+        Menggunakan ukuran utama dari width atau height jika tersedia, 
+        atau ukuran konten sebagai dasarnya
+    B.0
+        Memulai perhitungan dari ukuran basis nol
+    C.200px
+        Ukuran sebesar 200 pixel
+    D.50%
+        Ukuran awal sebesar 50% dari ukuran dalam container pada sumbu utama

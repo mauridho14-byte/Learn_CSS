@@ -1,0 +1,5 @@
+1. Apa itu order?
+    order adalah properti CSS Flexbox yang digunakan untuk mengatur 
+    urutan posisi item di dalam flex container.
+    Secara default, setiap item memiliki nilai order: 0.
+    Artinya, item akan ditampilkan sesuai urutan HTML-nya
