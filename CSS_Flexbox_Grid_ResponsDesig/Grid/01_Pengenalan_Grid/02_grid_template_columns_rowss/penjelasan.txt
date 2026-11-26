@@ -1,0 +1,35 @@
+1. grid-template-columns
+    Properti grid-template-columns digunakan untuk menentukan jumlah
+    dan ukuran kolom pada Grid Container.
+    .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+    }
+    Artinya:
+        - Membuat 3 kolom.
+        - Kolom pertama lebarnya 200px.
+        - Kolom kedua lebarnya 200px.
+        - Kolom ketiga lebarnya 200px.
+
+2. grid-template-rows
+    Kalau grid-template-columns mengatur kolom, maka grid-template-rows 
+    digunakan untuk menentukan jumlah dan ukuran baris.
+    .container {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 100px 150px;
+    }
+    Artinya:
+        - Membuat 2 kolom dengan lebar masing-masing 200px.
+        - Membuat 2 baris.
+        - Baris pertama tingginya 100px.
+        - Baris kedua tingginya 150px.
+
+3.Menggunakan satuan fr
+    Selain px, CSS Grid memiliki satuan khusus bernama fr (fraction).
+    Satuan fr digunakan untuk membagi ruang yang tersedia di dalam Grid Container.
+    Contoh:
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }

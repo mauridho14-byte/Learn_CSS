@@ -1,0 +1,35 @@
+Apa itu CSS Grid?
+    CSS Grid adalah sistem layout CSS yang digunakan untuk mengatur 
+    elemen HTML dalam bentuk baris (row) dan kolom (column) secara bersamaan.
+    Kalau Flexbox biasanya berfokus pada satu arah, Grid bisa mengatur dua arah sekaligus.
+    Dengan CSS Grid, kita bisa mengatur susunan tanpa harus mengatur posisi setiap kotak satu per satu.
+
+3. Grid Container dan Grid Item
+    Ini adalah dua istilah yang wajib kamu pahami sebelum lanjut.
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    Container adalah parent, sedangkan item merupakan child langsung yang menjadi Grid Item.
+    Elemen parent yang diberi:
+       display: grid;
+    Elemen tersebut akan menjadi Grid Container.
+
+    Grid Item
+    Elemen anak yang berada langsung di dalam Grid Container disebut Grid Item. 
+    Pada contoh di atas:
+    - .container → Grid Container.
+    - .item → Grid Item.
+    Perlu diingat, anak yang berada di dalam .item bukan Grid Item dari .container, karena bukan anak langsung.
+
+2. Perbandingan properti
+    Ada beberapa properti yang memiliki fungsi mirip antara Flexbox dan Grid.
+        Kebutuhan	             Flexbox	            Grid
+    Mengaktifkan layout	     display: flex   	   display: grid
+    Jarak item	             gap	               gap
+    Mengatur arah	         flex-direction	       Rows & columns
+    Posisi horizontal item	 justify-content 	   justify-items / justify-content
+    Posisi vertikal item	 align-items	       align-items / align-content
+    Mengatur ukuran	         flex-grow,flex-basis  fr, minmax()
+    Mengatur posisi item	 order            	   grid-column, grid-row
