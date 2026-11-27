@@ -12,7 +12,7 @@ item ketika ruang di dalam container tidak mencukupi.
     tersebut mengecil.
 
 2.Memahami nilai flex-shrink 
-    A.flex-shrink: 1
+    A.flex-shrink: 1 
         Nilai default dari flex-shrink
         .item {
             flex-shrink: 1;

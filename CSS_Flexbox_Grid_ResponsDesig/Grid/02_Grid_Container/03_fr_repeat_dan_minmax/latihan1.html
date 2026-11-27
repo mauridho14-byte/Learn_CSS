@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* max-width:300px; */
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(3,minmax(150px,1fr));
+            /* grid-template-columns:repeat(2,minmax(350px,1fr)); */
+            /* grid-template-rows:repeat(3,minmax(150px,300px)); */
+            gap:10px;
+        }
+        .item{
+            background-color: skyblue;
+            border:1px solid black;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1l Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint tempora possimus praesentium exercitationem expedita voluptatum beatae ratione autem cum quis, et provident deserunt non excepturi! Tenetur dignissimos beatae cupiditate.</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>

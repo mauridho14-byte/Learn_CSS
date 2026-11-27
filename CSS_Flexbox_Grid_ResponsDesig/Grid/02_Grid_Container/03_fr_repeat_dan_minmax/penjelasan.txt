@@ -1,0 +1,47 @@
+1. Fungsi repeat()
+    repeat() digunakan untuk mengulang pola ukuran kolom atau baris, 
+    sehingga kita tidak perlu menuliskan nilai yang sama berulang kali.
+    -Tanpa repeat():
+            .container {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+            }
+    -Dengan repeat()
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+            }
+
+2.repeat() dengan ukuran berbeda
+    repeat() juga bisa digabungkan dengan ukuran kolom yang berbeda.
+    .container {
+        display: grid;
+        grid-template-columns: 100px repeat(3, 1fr) 100px;
+    }
+    Artinya:
+    - Kolom pertama berukuran 100px.
+    - Kolom kedua, ketiga, dan keempat menggunakan 1fr.
+    - Kolom kelima berukuran 100px.
+
+3. Fungsi minmax()
+    Sekarang kita belajar fungsi yang sangat berguna, yaitu minmax().
+    minmax() digunakan untuk menentukan ukuran minimum dan maksimum suatu 
+    kolom atau baris.
+    Sintaksnya:
+        minmax(minimum, maksimum)
+    contoh:
+        .container {
+            display: grid;
+            grid-template-columns: minmax(200px, 500px);
+        }
+    Artinya, kolom tersebut:
+    - Tidak boleh lebih kecil dari 200px.
+    - Tidak boleh lebih besar dari 500px.
+    - Ukurannya dapat berubah di antara 200px sampai 500px, mengikuti 
+      ruang yang tersedia dan aturan Grid lainnya.
+
+4. Perbandingan ketiganya
+    CSS                         	Hasil
+    repeat(3, 200px)	            3 kolom, masing-masing 200px
+    repeat(3, 1fr)	                3 kolom dengan pembagian ruang sama
+    repeat(3, minmax(200px, 1fr))	3 kolom, minimum 200px, bisa membesar
