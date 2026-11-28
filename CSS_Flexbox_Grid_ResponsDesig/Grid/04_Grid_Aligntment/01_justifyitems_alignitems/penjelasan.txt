@@ -1,0 +1,78 @@
+Sebelumnya kita belajar mengatur posisi Grid Item menggunakan grid-column,
+grid-row, grid-area, dan span.
+Sekarang kita belajar mengatur posisi item di dalam area atau 
+cell Grid-nya.
+
+1. Memahami perbedaan posisi item dan ukuran area
+    Misalnya kita punya Grid dengan 3 kolom, masing-masing berukuran 200px.
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 150px;
+        gap: 10px;
+    }
+    Kemudian setiap item memiliki warna background:
+        .item {
+            background-color: skyblue;
+        }
+    Secara default, item akan memenuhi area Grid-nya, sehingga warna background memenuhi seluruh cell.
+    Nah, dengan justify-items dan align-items, kita bisa mengubah posisi item tanpa mengubah susunan 
+    kolom maupun barisnya.
+
+2. justify-items
+    justify-items digunakan untuk mengatur posisi Grid Item pada
+    sumbu horizontal (inline axis, biasanya kiri-kanan).
+    Nilai yang umum digunakan:
+        Nilai	    Fungsi
+        start	    Item berada di awal (kiri)
+        end	        Item berada di akhir (kanan)
+        center	    Item berada di tengah
+        stretch	    Item memenuhi area (default)
+
+3. align-items
+    Kalau justify-items mengatur posisi horizontal, align-items mengatur 
+    posisi Grid Item pada sumbu vertikal (block axis, biasanya atas-bawah).
+    Nilai yang umum:
+        Nilai	    Fungsi
+        start	    Item berada di atas
+        end	        Item berada di bawah
+        center	    Item berada di tengah vertikal
+        stretch	    Item memenuhi area (default)
+
+4. Shorthand place-items
+    Karena terkadang kita ingin mengatur kedua sumbu sekaligus, CSS 
+    Grid menyediakan shorthand:
+        .container {
+            place-items: center;
+        }
+        Ini sama dengan:
+            .container {
+                justify-items: center;
+                align-items: center;
+            }
+        Kita juga bisa memberikan dua nilai:
+            .container {
+                place-items: start end;
+            }
+        Urutan nilainya adalah:
+            place-items: align-items justify-items;
+
+    Contoh	                    Hasil
+    place-items: center 	    Vertikal center, horizontal center
+    place-items: start center	Vertikal atas, horizontal center
+    place-items: end start  	Vertikal bawah, horizontal kiri
+    place-items: center end	    Vertikal center, horizontal kanan
+
+    Catatan: place-items adalah shorthand dari align-items dan justify-items, 
+    bukan untuk memindahkan keseluruhan Grid Container.
+
+5.ringkasan
+    Properti	    Mengatur                	Arah
+    justify-items	Posisi item dalam cell	    Horizontal
+    align-items 	Posisi item dalam cell	    Vertikal
+    place-items	    Shorthand keduanya	        Horizontal + vertikal
+
+    Ingat cara membedakannya
+    - justify-items → mengatur item ke kiri, tengah, kanan.
+    - align-items → mengatur item ke atas, tengah, bawah.
+    - place-items → mengatur kedua arah sekaligus.

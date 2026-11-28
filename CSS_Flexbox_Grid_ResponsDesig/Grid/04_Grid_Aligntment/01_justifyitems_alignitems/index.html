@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3,200px);
+            grid-template-rows:150px;
+
+            /* justify-items: stretch;
+            align-items:end; */
+            /* justify-items: start;
+            align-items: center; */
+            /* justify-items: center;
+            align-items: end; */
+
+            /* place-items:end center; */
+            /* place-items:start end; */
+            
+            gap:10px;
+        }
+        .item{
+            color: white;
+            background-color: blue;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Satu</div>
+        <div class="item">Dua</div>
+        <div class="item">Tiga</div>
+    </div>
+</body>
+</html>

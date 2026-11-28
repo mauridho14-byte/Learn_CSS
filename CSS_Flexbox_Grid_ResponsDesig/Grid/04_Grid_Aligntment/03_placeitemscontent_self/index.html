@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            border:5px solid black;
+            height:800px;
+            display: grid;
+            grid-template-columns:repeat(2,200px);
+            grid-auto-rows:130px;
+
+            /* place-content:end center; */
+            place-content: end;
+
+            /* place-items:center; */
+            /* place-items:end end; */
+
+            gap:10px;
+        }
+
+        .kusus{
+            /* untuk item saja */
+            place-self:center;
+        }
+
+        .item{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: red;
+            border:3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">SATU</div>
+        <div class="item">DUA</div>
+        <div class="item">TIGA</div>
+        <div class="item kusus">EMPAT</div>
+        <div class="item">LIMA</div>
+        <div class="item">ENAM</div>
+    </div>
+</body>
+</html>

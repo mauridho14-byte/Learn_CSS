@@ -1,0 +1,105 @@
+Pada materi sebelumnya, kita sudah belajar:
+    - justify-items dan align-items
+    - justify-content dan align-content
+    Sekarang kita belajar shorthand (penyingkatan) dari properti-properti 
+    tersebut, yaitu place-items, place-content, dan place-self.
+
+1. place-items
+    place-items merupakan shorthand dari:
+        - align-items → mengatur posisi item secara vertikal di dalam cell.
+        - justify-items → mengatur posisi item secara horizontal di dalam cell.
+
+    A. Contoh tanpa shorthand:
+        .container {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+      Contoh menggunakan shorthand:
+        .container {
+            display: grid;
+            place-items: center;
+        }
+      Hasilnya sama, karena center diterapkan pada kedua arah.
+
+    B. Menggunakan dua nilai
+       Kita juga bisa menggunakan dua nilai:
+        .container {
+            place-items: start center;
+        }
+       Urutan nilainya adalah:
+        place-items: align-items justify-items;
+
+2. place-content
+    place-content merupakan shorthand dari:
+        - align-content → mengatur posisi/distribusi keseluruhan Grid secara vertikal.
+        - justify-content → mengatur posisi/distribusi keseluruhan Grid secara horizontal.
+    
+    A. Tanpa shorthand
+        .container {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+       Dengan shorthand
+        .container {
+            display: grid;
+            place-content: center;
+        }
+
+    B. Menggunakan dua nilai
+        .container {
+           place-content: space-between center;
+        }
+       Urutan nilai:
+        place-content: align-content justify-content;
+
+3. place-self
+    Kalau place-items mengatur seluruh Grid Items, place-self digunakan untuk mengatur satu item Grid saja.
+    place-self merupakan shorthand dari:
+        - align-self → posisi individual secara vertikal.
+        - justify-self → posisi individual secara horizontal.
+    Misalnya kita punya 4 item Grid, tetapi kita ingin item ke-4 berada di kanan bawah cell-nya sendiri.
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item item-khusus">4</div>
+        </div>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            place-items: center;
+        }
+        .item {
+            background-color: steelblue;
+            width: 70px;
+            height: 70px;
+        }
+        .item-khusus {
+             place-self: end;
+        }
+
+        Item 1, 2, dan 3 mengikuti:
+            place-items: center;
+        Sedangkan item 4 mengikuti:
+            place-self: end;
+
+    Menggunakan dua nilai
+        .item-khusus {
+            place-self: end center;
+        }   
+    Urutan nilainya:
+        place-self: align-self justify-self;
+
+4. Perbedaan ketiganya
+    Properti	    Yang diatur 	                            Shorthand dari
+    place-items 	Seluruh item di dalam cell masing-masing	align-items + justify-items
+    place-content	Keseluruhan Grid Tracks dalam container	    align-content + justify-content
+    place-self  	Satu Grid Item tertentu	                    align-self + justify-self
+
+    Cara mudah mengingat
+        - Items → mengatur item-item di dalam cell.
+        - Content → mengatur keseluruhan kumpulan Grid.
+        - Self → mengatur dirinya sendiri (satu item).

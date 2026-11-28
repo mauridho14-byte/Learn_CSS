@@ -1,0 +1,56 @@
+Sebelumnya kita belajar:
+    - justify-items → mengatur posisi item di dalam cell secara horizontal.
+    - align-items   → mengatur posisi item di dalam cell secara vertikal.
+Sekarang kita belajar justify-content dan align-content, yang fungsinya mengatur posisi keseluruhan susunan Grid (Grid Tracks)
+di dalam container.
+
+
+1. justify-content
+    justify-content digunakan untuk mengatur posisi atau distribusi 
+    keseluruhan Grid Tracks pada sumbu horizontal(kiri ke kanan).
+    .container {
+        display: grid;
+        width: 800px;
+        grid-template-columns: repeat(3, 150px);
+
+        justify-content: center;
+    }
+    Artinya, seluruh susunan kolom Grid dipindahkan ke tengah container.
+    
+    Nilai-nilai justify-content
+        A.start
+            Grid Tracks berada di awal container (biasanya kiri).
+            justify-content: start;
+        B.center
+            Grid Tracks berada di tengah container.
+            justify-content: center;
+        C.end
+            Grid Tracks berada di akhir container (biasanya kanan).
+            justify-content: end;
+        D.space-between
+            Ruang kosong dibagi di antara kolom. Tidak ada ruang tambahan di sisi kiri dan kanan.
+            justify-content: space-between;
+        E.space-around
+            Ruang kosong dibagikan di sekeliling kolom. Ruang pada sisi kiri 
+            dan kanan masing-masing track lebih kecil dibandingkan ruang di antara track.
+            justify-content: space-around;
+        F.space-evenly
+            Ruang kosong dibagi secara merata, termasuk sisi kiri, sisi kanan, dan antar-track
+            justify-content: space-evenly;
+        G.stretch
+            Grid Tracks yang ukurannya masih fleksibel akan diperlebar untuk mengisi ruang kosong.
+            justify-content: stretch;
+
+2. align-content
+    Kalau justify-content mengatur Grid Tracks secara horizontal, 
+    align-content mengatur keseluruhan Grid Tracks secara vertikal.
+
+    Nilai-nilai align-content
+        Nilai	        Fungsi
+        start	        Susunan baris berada di atas
+        center	        Susunan baris berada di tengah
+        end     	    Susunan baris berada di bawah
+        space-between	Ruang dibagi di antara baris
+        space-around	Ruang dibagikan di sekitar baris
+        space-evenly	Ruang dibagi sama rata
+        stretch	        Baris fleksibel diregangkan untuk mengisi ruang

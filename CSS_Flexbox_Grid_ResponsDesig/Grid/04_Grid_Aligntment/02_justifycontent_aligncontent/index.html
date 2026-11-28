@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+
+            background-color: red;
+            border: 2px solid black;
+            height:500px;
+
+            grid-template-columns:repeat(3,100px);
+            grid-auto-rows:200px;
+
+            /* justify-content: start;
+            align-content:space-evenly; */
+
+            justify-content:space-evenly;
+            align-content: space-evenly;
+
+            
+
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+
+            /* align-content: start;
+            align-content: end;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly; */
+
+            gap: 10px;
+        }
+        .item{
+            background-color: green;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Ridho</div>
+        <div class="item">Natasya</div>
+        <div class="item">Mamah</div>
+        <div class="item">Ayah</div>
+        <div class="item">Al davi</div>
+        <div class="item">Satu Algi</div>
+    </div>
+</body>
+</html>

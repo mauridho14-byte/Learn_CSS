@@ -44,6 +44,23 @@
             grid-row:2/4;
         }
 
+        @media(max-width:600px){
+            .container{
+                width:100%;
+                grid-template-columns:1fr;
+                grid-template-rows:100px 250px 150px 150px 100px;
+            }
+
+            .header,
+            .footer,
+            .content,
+            .sidebar-1,
+            .sidebar-2{
+                grid-column:auto;
+                grid-row: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
