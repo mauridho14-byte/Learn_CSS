@@ -1,0 +1,90 @@
+Materi ini cukup penting karena akan memudahkan kamu membuat layout 
+website seperti Header, Main Content, Sidebar, dan Footer tanpa harus 
+menghitung Grid Line satu per satu.
+Kalau layout semakin kompleks, penggunaan angka seperti 1 / 3, 2 / 4, 
+dan seterusnya terkadang sulit dibaca.
+Nah, CSS Grid memiliki fitur bernama Grid Template Areas, yang 
+memungkinkan kita mengatur layout menggunakan nama area.
+
+1. Mengenal grid-template-areas
+    grid-template-areas digunakan untuk menentukan susunan layout 
+    Grid menggunakan nama-nama area.
+    .container {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "header header"
+            "main   main"
+            "side1  side2"
+            "footer footer";
+    }
+
+    Perhatikan susunan nama area:
+    grid-template-areas:
+    "header header"
+    "main   main"
+    "side1  side2"
+    "footer footer";
+
+    Setiap tanda kutip mewakili satu baris Grid, sedangkan setiap nama mewakili area pada kolom.
+    Baris  	Kolom 1	  Kolom 2
+    1	    header	  header
+    2	    main	  main
+    3	    side1	  side2
+    4	    footer	  footer
+    Jadi kita tidak perlu lagi menentukan Grid Line secara manual untuk setiap item.
+
+2.Menghubungkan area dengan elemen HTML
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="main">Main Content</div>
+        <div class="sidebar1">Sidebar 1</div>
+        <div class="sidebar2">Sidebar 2</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 250px 150px 80px;
+        grid-template-areas:
+            "header header"
+            "main   main"
+            "side1  side2"
+            "footer footer";
+        gap: 10px;
+    }
+    .header {
+        grid-area: header;
+        background-color: blue;
+    }
+    .main {
+        grid-area: main;
+        background-color: green;
+    }
+    .sidebar1 {
+        grid-area: side1;
+        background-color: orange;
+    }
+    .sidebar2 {
+        grid-area: side2;
+        background-color: orange;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: purple;
+    }
+
+3.Apa fungsi grid-area?
+    Contohnya:
+        .header {
+            grid-area: header;
+        }
+    Artinya elemen .header ditempatkan pada area bernama header, yang 
+    sudah kita definisikan sebelumnya pada grid-template-areas.
+        .main {
+            grid-area: main;
+        }   
+    Elemen .main ditempatkan pada area main.
